@@ -1,0 +1,18 @@
+testapplication:
+  replicaCount: 1
+  image:
+    repository: github.com/baldummy/app-repo.git
+    tag: willbepreviewspecific
+  network:
+    http:
+      servicePort: 8080
+      ingress:
+        host: willbepreviewspecific
+  readinessProbe:
+    httpGet:
+      path: /
+      port: http
+  livenessProbe:
+    httpGet:
+      path: /
+      port: http
