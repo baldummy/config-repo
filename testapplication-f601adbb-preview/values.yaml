@@ -2,12 +2,12 @@ testapplication:
   replicaCount: 1
   image:
     repository: github.com/baldummy/app-repo.git
-    tag: willbepreviewspecific
+    tag: a3aefd899b83af165b63c3deaa60dc3a9107758c
   network:
     http:
       servicePort: 8080
       ingress:
-        host: willbepreviewspecific
+        host: client-libraries-f601adbb.shapp-test.os1.balgroupit.com
   readinessProbe:
     httpGet:
       path: /
