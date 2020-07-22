@@ -2,7 +2,7 @@ testapplication:
   replicaCount: 1
   image:
     repository: github.com/baldummy/app-repo.git
-    tag: 064db8f30c4ca27ef44a9f1195ff3a0b6a7dcdcb
+    tag: 1.1.0
   network:
     http:
       servicePort: 8080
